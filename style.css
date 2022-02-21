@@ -1,0 +1,100 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter';
+     font-size: 15px;
+}
+.card{
+    background-color: hsl(244, 38%, 16%);
+    box-shadow: 0px 5px 5px;
+    margin: 10%;
+    border-radius: 10px;
+    padding-bottom: 5%;
+}
+.img, .text{
+    display: inline-block;
+    vertical-align: top;
+}
+.stat1,
+.stat2,
+.stat3 {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10%;
+}
+.stat1, .stat2{
+    margin-right: 60px;
+}
+.text {
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 8%;
+}
+.uppercase{
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    margin-top: -10px;
+    font-size: 10px;
+}
+h1,.stat{
+    color: hsl(0, 0%, 100%);
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 13px;
+    line-height: 180%;
+}
+.img{
+    background-image: linear-gradient(rgba(70, 3, 70, 0.8), rgba(70, 3, 70, 0.8)),
+    url("images/image-header-desktop.jpg");
+    background-size:cover;
+    float: right;
+    height: 405.5px;
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* object-fit: contain; */
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('static/Inter-Regular.ttf');
+    weight: 400;
+}
+@media all and (max-width: 375px) {
+    .card {
+        background-color: hsl(244, 38%, 16%);
+        box-shadow: 0px 5px 5px;
+        margin: 5%;
+        border-radius: 10px;
+        padding-bottom: 5%;
+    }
+    .img {
+        background-image: linear-gradient(rgba(70, 3, 70, 0.8), rgba(70, 3, 70, 0.8)),
+        url("images/image-header-mobile.jpg");
+        background-size:cover;
+        height: 200px;
+        float: none;
+        width: -webkit-fill-available;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+    .text {
+        width: 80%;
+        text-align: center;
+        /* margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 8%; */
+
+    }
+    .stat1,
+    .stat2,
+    .stat3 {
+        display: block;
+        margin-top: 10%;
+        margin-right: 0px;
+    }
+}
